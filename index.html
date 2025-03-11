@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learning the HTML Basics">
+
+    <meta content="basics" property="og:title">
+    <meta property="og:type" content="website">
+    <meta content="img.png" property="og:image">
+    <meta property="og:url" content="https://">
+
+    <title>Basic HTML</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>HTML Basics</h1>
+        <nav>
+            <a href="#section1">Section 1</a>
+            <a href="#section2">Section 2</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="section1">
+            <h2>Section 1</h2>
+
+            <!-- Class -->
+            <div class="box red-box">Example</div>
+
+            <p>This is the <strong>Section 1</strong></p>
+
+            <!-- Lists -->
+            <ul>
+                <li>First</li>
+                <li>Second</li>
+            </ul>
+
+            <ol>
+                <li>First</li>
+                <li>Second</li>
+            </ol>
+
+            <!-- Image + text -->
+            <figure>
+                <img src="cat.jpg" alt="cat">
+                <figcaption>Example</figcaption>
+            </figure>
+
+            <!-- Form -->
+            <form action="#" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required><br>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required><br>
+
+                <input type="checkbox" id="agree" name="agree" required>
+                <label for="agree">I agree with terms</label><br>
+
+                <button type="submit">Send</button>
+            </form>
+        </section>
+
+        <!-- Media -->
+        <section id="section2">
+            <h2>Section 2</h2>
+            <audio src="audio.mp3" controls loop muted></audio>
+
+            <iframe src="https://youtube.com/embed/TG6XSFeOT3g?si=AhZcq6EJRbq7YDeE" width="560" height="420"
+                allowfullscreen></iframe>
+        </section>
+
+        <!-- Link -->
+        <a href="https://google.com" target="_blank">Google</a>
+
+    </main>
+    <footer>&copy; 2025 Learning</footer>
+</body>
+
+</html>
